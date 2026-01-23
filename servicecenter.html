@@ -1,0 +1,323 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Story</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+    crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="syle.css">
+</head>
+<body>
+    <header class="container-fluid bg-body-tertiary">
+        <div class="container">
+            <div class="row">
+            <div class="container col-1 float">
+               <a class="navbar-brand nav-link" href="index.html">
+                 <strong class="fw-bold"><h4>Hyundai <span class="text-primary">Creta</span></h4></strong>
+               </a>
+            </div>
+            <div class="col-4">
+                
+            </div>
+          <nav class="navbar  navbar-expand-lg col-6">
+            <ul class="navbar nav">
+                <li class="nav-item">
+                    <a class="nav-link text-black" href="findcar.html">Find a Car</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link text-black" href="about.html">About Us</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link text-black" href="servicecenter.html">Connect to Service</a>
+                </li>
+                <li class="nav-item ps-2">
+                    <a class="nav-link text-black" href="#">
+                        <button class="btn btn-primary"
+                                data-bs-toggle="modal"
+                                data-bs-target="#modalId"
+                                type="button">  
+                                <i class="bi bi-person-fill"></i>
+                        </button>
+                    </a>   
+                </li>
+            </ul>
+          </nav>
+        </div>
+        </div>
+    </header>
+    <!-- if you want to close by clicking outside the modal, delete the last endpoint:data-bs-backdrop and data-bs-keyboard -->
+        <div
+            class="modal fade"
+            id="modalId"
+            tabindex="-1"
+            data-bs-backdrop="static"
+            data-bs-keyboard="false"
+            
+            role="dialog"
+            aria-labelledby="modalTitleId"
+            aria-hidden="true"
+        >
+            <div
+                class="modal-dialog modal-dialog-scrollable modal-dialog-centered modal-sm"
+                role="document"
+            >
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="modalTitleId">
+                            Login To Get More
+                        </h5>
+                        <button
+                            type="button"
+                            class="btn-close"
+                            data-bs-dismiss="modal"
+                            aria-label="Close"
+                        ></button>
+                    </div>
+                    <div class="modal-body">
+                        <div class="p-3">
+                        <input class="form-control mb-3" type="text" placeholder="Enter Your Name">
+                        <input class="form-control mb-3" type="email" placeholder="Enter Your Email">
+                        <input class="form-control mb-3" type="number" placeholder="Enter Your Number">
+                        <button class="btn btn-primary w-100">Login</button>
+                    </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+<!--modal ends-->
+<section class="container-fluid service">
+        <h1 class="text-center">Service Excellence, Always</h1>
+        <h4 class="text-center mt-4">Expert care for your Hyundai, whenever you need it</h4>
+        <div class="py-5">
+            <button class="servicebtn">BOOK SERVICE</button>
+            <button class="servicebtn">FIND CENTER</button>
+            <button class="servicebtn bg-danger">24/7 EMERGENCY</button>
+        </div>
+</section>
+<section>
+        <div class="w-100 py-4">
+            <h3 class="text-center fs-2">WHY CHOOSE US</h3>
+        </div>
+        <div class="container py-5">
+            <div class="row justify-content-around">
+                <div class="col-md-4 servicebox">
+                    <h4><i class="bi bi-award pe-2"></i>CERTIFIED CENTERS</h4>
+                    <p>Nationwide network of 1,500+ authorized service centers equipped with latest diagnostic equipment, genuine parts, factory-trained technicians, and customer lounges. Every center maintains Hyundai's global quality standards.</p>
+                </div>
+                <div class="col-md-4 servicebox">
+                    <h4><i class="bi bi-wrench pe-2"></i>EXPERT TECHNICIANS</h4>
+                    <p>Nationwide network of 1,500+ authorized service centers equipped with latest diagnostic equipment, genuine parts, factory-trained technicians, and customer lounges. Every center maintains Hyundai's global quality standards.</p>
+                </div>
+                <div class="col-md-4 servicebox">
+                    <h4><i class="bi bi-check2 pe-2"></i>GENUINE PARTS</h4>
+                    <p>100% authentic Hyundai parts with manufacturer's warranty. Perfect fit and compatibility, tested for quality and durability, optimal vehicle performance, maintains resale value. Beware of counterfeit parts—they void your warranty!</p>
+                </div>
+        </div>
+        </div>
+        <div class="container py-3 text-center">
+            <h3 class="fs-2">SERVICES WE OFFER  </h3>
+        </div>
+        <div class="container my-4">
+  <div class="row g-4">
+    <div class="col-12 col-md-6 col-lg-4">
+      <div class="card h-100">
+        <div class="card-body">
+          <h5 class="card-title mt-2">🛢️ ROUTINE MAINTENANCE</h5>
+          <p class="card-text">
+            Engine Oil & Filter Change (Every 10,000 km) - ₹1,999+ <br>
+            Multi-Point Inspection (Complimentary) <br>
+            Tire Rotation & Balancing - ₹899 <br>
+            Battery Check & Replacement - ₹3,999 <br>
+            AC Service & Gas Refill - ₹2,499
+          </p>
+        </div>
+        <div class="card-footer">
+          <button class="btn btn-primary w-100">BOOK MAINTENANCE</button>
+        </div>
+      </div>
+    </div>
+    <div class="col-12 col-md-6 col-lg-4">
+      <div class="card h-100">
+        <div class="card-body">
+          <h5 class="card-title mt-2">🖥️ REPAIRS & DIAGNOSTICS</h5>
+          <p class="card-text">
+            Computerized Diagnostics - ₹599+ <br>
+            Engine Repairs (Timing belt, spark plugs) <br>
+            Transmission Service - ₹4,999+ <br>
+            Brake Service - ₹2,999+ <br>
+            Electrical Repairs (Quote after diagnosis) <br>
+            Body & Paint (Visit body shop)
+          </p>
+        </div>
+        <div class="card-footer">
+          <button class="btn btn-primary w-100">SCHEDULE REPAIR</button>
+        </div>
+      </div>
+    </div>
+    <div class="col-12 col-md-6 col-lg-4">
+      <div class="card h-100">
+        <div class="card-body">
+          <h5 class="card-title mt-2">🚗 SERVICE PACKAGES</h5>
+          <p class="card-text">
+            BASIC – ₹7,999 (Save ₹2,000) <br>
+            STANDARD – ₹14,999 (Save ₹5,000) <br>
+            PREMIUM – ₹27,999 (Save ₹12,000)
+          </p>
+        </div>
+        <div class="card-footer">
+          <button class="btn btn-primary w-100">BUY PACKAGE</button>
+        </div>
+      </div>
+    </div>
+    <div class="col-12 col-md-6 col-lg-4">
+      <div class="card h-100">
+        <div class="card-body">
+          <h5 class="card-title mt-2">🎨 ACCESSORIES & PARTS</h5>
+          <p class="card-text">
+            Premium Floor Mats - ₹2,499 <br>
+            Seat Covers - ₹4,999-₹9,999 <br>
+            Dash Camera - ₹7,999 <br>
+            Parking Sensors - ₹3,999 <br>
+            Reverse Camera - ₹5,999
+          </p>
+        </div>
+        <div class="card-footer">
+          <button class="btn btn-primary w-100">SHOP ACCESSORIES</button>
+        </div>
+      </div>
+    </div>
+    <div class="col-12 col-md-6 col-lg-4">
+      <div class="card h-100">
+        <div class="card-body">
+          <h5 class="card-title mt-2">🆘 24/7 ROADSIDE ASSISTANCE</h5>
+          <p class="card-text">
+            Battery Jump Start <br>
+            Fuel Delivery <br>
+            Flat Tire Assistance <br>
+            Key Lockout Service <br>
+            Towing (100km free) <br>
+            Emergency Fluid Top-up <br><br>
+            Call: 1800-123-9999
+          </p>
+        </div>
+        <div class="card-footer">
+          <button class="btn btn-primary w-100">SAVE CONTACT</button>
+        </div>
+      </div>
+    </div>
+    <div class="col-12 col-md-6 col-lg-4">
+      <div class="card h-100">
+        <div class="card-body">
+          <h5 class="card-title mt-2">📱 DOORSTEP SERVICE</h5>
+          <p class="card-text">
+            Oil Change at Home/Office <br>
+            Basic Maintenance <br>
+            Select Cities Only <br>
+            Convenient Scheduling
+          </p>
+        </div>
+        <div class="card-footer">
+          <button class="btn btn-primary w-100">CHECK AVAILABILITY</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+</section>
+<section>
+    <div class="container py-5">
+    <div class="row g-4">
+        <div class="col-md-4">
+            <div class="p-4 border rounded bg-light">
+                <h4 class="mb-3">Book Your Service</h4>
+                <h5 class="mt-4">Your Details</h5>
+                <div class="mb-3">
+                    <label class="form-label">Name</label>
+                    <input type="text" class="form-control" placeholder="Your Name">
+                </div>
+                <div class="mb-3">
+                    <label class="form-label">Phone</label>
+                    <input type="text" class="form-control" placeholder="Phone Number">
+                </div>
+                <div class="mb-3">
+                    <label class="form-label">Email</label>
+                    <input type="email" class="form-control" placeholder="Email">
+                </div>
+                <div class="mb-3">
+                    <label class="form-label">Vehicle Registration</label>
+                    <input type="text" class="form-control" placeholder="KA 01 AB 1234">
+                </div>
+                <button class="btn btn-primary w-100">Confirm Booking</button>
+                <p class="text-muted small mt-2 mb-0">Expected Response: Within 2 hours</p>
+                <p class="text-muted small">Confirmation via SMS & Email</p>
+            </div>
+        </div>
+        <div class="col-md-8">
+            <div class="p-3 border rounded mb-4">
+                <h5>📍 Hyundai Service Center - Sector 18</h5>
+                <p class="mb-1">Gurgaon, Haryana</p>
+                <p class="mb-1">⭐⭐⭐⭐⭐ 4.8 (2,456 reviews)</p>
+                <p class="mb-1">📞 +91-124-XXXXXXX</p>
+                <p class="mb-1">🕐 Mon-Sat: 9AM-7PM, Sun: 10AM-5PM</p>
+                <p class="mb-2">📍 2.5 km away</p>
+                <p class="small mb-3">Services: All repairs, Express service, Body shop</p>
+                <button class="btn btn-outline-primary btn-sm">Get Directions</button>
+                <button class="btn btn-outline-success btn-sm">Call Now</button>
+                <button class="btn btn-primary btn-sm">Book Appointment</button>
+            </div>
+            <h3 class="mt-4 mb-3">Convenience Features</h3>
+            <div class="row g-3">
+                <div class="col-sm-6">
+                    <div class="p-3 border rounded h-100">
+                        <h6>📱 Online Booking</h6>
+                        <p class="small mb-0">Schedule 24/7 • Choose date & time • Track status</p>
+                    </div>
+                </div>
+                <div class="col-sm-6">
+                    <div class="p-3 border rounded h-100">
+                        <h6>🚗 Doorstep Service</h6>
+                        <p class="small mb-0">We come to you • Oil change at home/office</p>
+                    </div>
+                </div>
+                <div class="col-sm-6">
+                    <div class="p-3 border rounded h-100">
+                        <h6>⚡ Express Service</h6>
+                        <p class="small mb-0">45-minute quick service • No appointment needed</p>
+                    </div>
+                </div>
+                <div class="col-sm-6">
+                    <div class="p-3 border rounded h-100">
+                        <h6>🔄 Pickup & Drop</h6>
+                        <p class="small mb-0">Complimentary • Free within 10km • Same-day return</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+</section>
+<footer class="container-fluid w-100 p-3 sticky-bottom">
+        <div class="container ms-5">
+            <div class="row">
+            <div class="col-3">
+                <h5><span><i class="bi bi-geo-alt pe-3"></i></span>Find a Dealer</h5>
+            </div>
+            <div class="col-3">
+                <h5><span><i class="bi bi-car-front pe-3"></i></span>Request a Driver</h5>
+            </div>
+            <div class="col-3">
+                <h5><span><i class="bi bi-card-checklist pe-3"></i></span>Prices</h5>
+            </div>
+            <div class="col-3">
+                <h5><span><i class="bi bi-cart pe-3"></i></span>Click To Buy</h5>
+            </div>
+        </div>
+        </div>
+    </footer>
+</body>
+</html>

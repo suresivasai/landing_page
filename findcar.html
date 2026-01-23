@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Find A Car</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+    crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="syle.css">
+</head>
+<body class="p-0">
+    <header class="container-fluid bg-body-tertiary">
+        <div class="container">
+            <div class="row">
+            <div class="container col-1 float">
+               <a class="navbar-brand nav-link" href="index.html">
+                 <strong class="fw-bold"><h4>Hyundai <span class="text-primary">Creta</span></h4></strong>
+               </a>
+            </div>
+            <div class="col-4">
+                
+            </div>
+          <nav class="navbar  navbar-expand-lg col-6">
+            <ul class="navbar nav">
+                <li class="nav-item">
+                    <a class="nav-link text-black" href="findcar.html">Find a Car</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link text-black" href="about.html">About Us</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link text-black" href="servicecenter.html">Connect to Service</a>
+                </li>
+                <li class="nav-item ps-2">
+                    <a class="nav-link text-black" href="#">
+                        <button class="btn btn-primary"
+                                data-bs-toggle="modal"
+                                data-bs-target="#modalId"
+                                type="button">  
+                                <i class="bi bi-person-fill"></i>
+                        </button>
+                    </a>   
+                </li>
+            </ul>
+          </nav>
+        </div>
+        </div>
+    </header>
+    <!-- if you want to close by clicking outside the modal, delete the last endpoint:data-bs-backdrop and data-bs-keyboard -->
+        <div
+            class="modal fade"
+            id="modalId"
+            tabindex="-1"
+            data-bs-backdrop="static"
+            data-bs-keyboard="false"
+            
+            role="dialog"
+            aria-labelledby="modalTitleId"
+            aria-hidden="true"
+        >
+            <div
+                class="modal-dialog modal-dialog-scrollable modal-dialog-centered modal-sm"
+                role="document"
+            >
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="modalTitleId">
+                            Login To Get More
+                        </h5>
+                        <button
+                            type="button"
+                            class="btn-close"
+                            data-bs-dismiss="modal"
+                            aria-label="Close"
+                        ></button>
+                    </div>
+                    <div class="modal-body">
+                        <div class="p-3">
+                        <input class="form-control mb-3" type="text" placeholder="Enter Your Name">
+                        <input class="form-control mb-3" type="email" placeholder="Enter Your Email">
+                        <input class="form-control mb-3" type="number" placeholder="Enter Your Number">
+                        <button class="btn btn-primary w-100">Login</button>
+                    </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+<!--modal ends-->
+<section class="container-fluid ">
+        <div class="discover">
+            <h2 class="py-2">Discover Your Perfect Hyundai</h2>
+            <h4 class="py-2 pb-4">Whether you're looking for efficiency</h4>
+            <button class=" btn btn-primary">Explore Models</button>
+        </div>
+        <div class="container p-5">
+            <div class="row g-4">
+            <div class="col-12 col-md-6 col-lg-4">
+                <div class="card h-100">
+                    <img class="card-img-top" src="assets/sedan.jpg" />
+                    <div class="card-body text-center">
+                        <h5 class="card-title">Sedans & Hatchbacks </h5>
+                        <p class="card-text">From Compact To Luxury. . .</p>
+                        <button class="btn btn-dark">View More</button>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-md-6 col-lg-4">
+                <div class="card h-100">
+                    <img class="card-img-top" src="assets/suv.jpg"  />
+                    <div class="card-body text-center">
+                        <h5 class="card-title">Suv's & Crossovers </h5>
+                        <p class="card-text">Adventure Awaits. . .</p>
+                        <button class="btn btn-dark">View More</button>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-md-6 col-lg-4">
+                <div class="card h-100">
+                    <img class="card-img-top" src="assets/sedan.jpg" />
+                    <div class="card-body text-center">
+                        <h5 class="card-title">Electric Vehicles</h5>
+                        <p class="card-text">Zero Emissions. . .</p>
+                        <button class="btn btn-dark">View More</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+</section>
+<section class="new py-5">
+    <div>
+        <div class="container">
+            <div class="row">
+            <div class="col-md-6 col-lg-3">
+                <select class="w-100 p-2">
+                   <option>All Prices</option>
+                   <option>Under $20,000</option>
+                   <option>$20,000 - $30,000</option>
+                   <option>$30,000 - $50,000</option>
+                   <option>Over $50,000</option>
+                </select>
+            </div>
+            <div class="col-md-6 col-lg-3">
+                <select class="w-100 p-2">
+                   <option>All Fuel Types</option>
+                   <option>Petrol</option>
+                   <option>Diesel</option>
+                   <option>Electric</option>
+                   <option>Hybrid</option>
+                </select>
+            </div>
+            <div class="col-md-6 col-lg-3">
+                <select class="w-100 p-2">
+                  <option>All Body Styles</option>
+                  <option>Sedan</option>
+                  <option>SUV</option>
+                  <option>Hatchback</option>
+                  <option>Coupe</option>
+                </select>
+            </div>
+            <div class="col-md-6 col-lg-3">
+                <button class="btn btn-warning w-100 p-2">Search</button>
+            </div>
+        </div>
+        </div>
+    </div>
+</section>
+<section>
+    <div class="container p-5">
+            <div class="row g-4">
+            <div class="col-12 col-md-6 col-lg-4">
+                <div class="card h-100 text-center">
+                    <div class="card-header">
+                        <h5 class="card-title">Venue</h5>
+                    </div>
+                    <div class="card-body">
+                        <img class="card-img" src="assets/venue.jpg" />
+                        <hr>
+                        <h6 class="card-text">₹7.9L* onwards*</h6>
+                        <hr>
+                        <ul class="text-start">
+                            <li>Key Features:</li>
+                            <li>5 Seater</li>
+                            <li>1.2L Petrol</li>
+                            <li>Manual/Auto</li>
+                            <li>17.4 kmpl**</li>
+                        </ul>
+                    </div>
+                    <div class="card-footer">
+                        <button class="btn btn-info">View Details</button>
+                        <button class="btn btn-dark">Book Test Drive</button>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-md-6 col-lg-4">
+                <div class="card h-100 text-center">
+                    <div class="card-header">
+                        <h5 class="card-title">Hyundai Tucson</h5>
+                    </div>
+                    <div class="card-body">
+                        <img class="card-img" src="assets/tuc1.jpg" />
+                        <hr>
+                        <h6 class="card-text">₹29.9L* onwards*</h6>
+                        <hr>
+                        <ul class="text-start">
+                            <li>Key Features:</li>
+                            <li>5 Seater</li>
+                            <li>2.0L Petrol</li>
+                            <li>Manual/Auto</li>
+                            <li>17.4 kmpl**</li>
+                        </ul>
+                    </div>
+                    <div class="card-footer">
+                        <button class="btn btn-info">View Details</button>
+                        <button class="btn btn-dark">Book Test Drive</button>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-md-6 col-lg-4">
+                <div class="card h-100 text-center">
+                    <div class="card-header">
+                        <h5 class="card-title">Hyundai Ioniq 5</h5>
+                    </div>
+                    <div class="card-body">
+                        <img class="card-img" src="assets/5.jpg" />
+                        <hr>
+                        <h6 class="card-text">₹45.9L* onwards*</h6>
+                        <hr>
+                        <ul class="text-start">
+                            <li>Key Features:</li>
+                            <li>5 Seater</li>
+                            <li>EV</li>
+                            <li>Manual/Auto</li>
+                            <li>17.4 kmpl**</li>
+                        </ul>
+                    </div>
+                    <div class="card-footer">
+                        <button class="btn btn-info">View Details</button>
+                        <button class="btn btn-dark">Book Test Drive</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="bg-black float py-4 text-white">
+        <h4>Ready to Schedule a Test Drive?</h4><br>
+    </div>
+    <div class="float bg-black pb-5 text-white">
+        <button class="btn btn-primary mx-3">
+            Find Nearest Dealership
+        </button>
+        <button class="btn btn-success">
+            Contact Us
+        </button>
+    </div>
+</section>
+<footer class="container-fluid w-100 p-3 sticky-bottom">
+        <div class="container ms-5">
+            <div class="row">
+            <div class="col-3">
+                <h5><span><i class="bi bi-geo-alt pe-3"></i></span>Find a Dealer</h5>
+            </div>
+            <div class="col-3">
+                <h5><span><i class="bi bi-car-front pe-3"></i></span>Request a Driver</h5>
+            </div>
+            <div class="col-3">
+                <h5><span><i class="bi bi-card-checklist pe-3"></i></span>Prices</h5>
+            </div>
+            <div class="col-3">
+                <h5><span><i class="bi bi-cart pe-3"></i></span>Click To Buy</h5>
+            </div>
+        </div>
+        </div>
+    </footer>
+</body>
+</html>
