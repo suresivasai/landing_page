@@ -1,2 +1,2 @@
-"# landing_page
+# landing_page
 https://suresivasai.github.io/landing_page/
